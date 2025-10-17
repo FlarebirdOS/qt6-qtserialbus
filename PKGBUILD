@@ -1,6 +1,6 @@
 pkgname=qt6-qtserialbus
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Qt module for general purpose serial bus access"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -22,7 +22,7 @@ makedepends=(
     'ninja'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(bde892253e96b1ffcc3e4b8acae7f49114282d398ba0f35c1d62d5fe4a71846a)
+sha256sums=(99cb275bc59130a9c6a4c04ee328ff45d25fded4bda4dfb93311f1da5aa4d2bb)
 
 build() {
     cd ${pkgname#*-}
